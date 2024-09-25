@@ -15,9 +15,34 @@ class NumWordPrinterTest {
 
     @Test
 
-    public void TestEvenLower(){
+    public void TestEvenDefault(){
         Assert.assertEquals("Even", numWordPrinter.printWord(6,"default"));
     }
+
+    @Test
+    void testEvenPrimeLuckyUpper() {
+        assertEquals("EVENPRIMELUCKY", numWordPrinter.printWord(2 * 11 * 13, "UPPERCASE"));
+    }
+
+    @Test
+    void testEvenPrimeLuckyDefault() {
+        assertEquals("EvenPrimeLucky", numWordPrinter.printWord(2 * 11 * 13, "DEFAULT"));
+    }
+
+    @Test
+    void testPrimeElevenDefault() {
+        assertEquals("PrimeEleven", numWordPrinter.printWord(11, "DEFAULT"));
+
+    }
+
+    @Test
+    void testPrimeElevenUpper() {
+        assertEquals("PRIMEELEVEN", numWordPrinter.printWord(11, "UPPERCASE"));
+
+    }
+
+
+
 
 
 
