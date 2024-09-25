@@ -28,5 +28,18 @@ public class MaxStackTest {
         Assert.assertEquals(5,stack.max());
     }
 
+    @Test
+
+    public void test3(){
+        MaxStack stack=new MaxStack();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        stack.push(2);
+        stack.pop();
+        Assert.assertEquals(3,stack.max());
+    }
+
+
 
 }
