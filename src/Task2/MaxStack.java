@@ -1,5 +1,7 @@
 package Task2;
 
+import org.junit.jupiter.api.Test;
+
 import java.util.Stack;
 
 public class MaxStack {
@@ -37,3 +39,4 @@ public class MaxStack {
     }
 
 }
+
