@@ -53,10 +53,16 @@ class NumWordPrinterTest {
     }
 
     @Test
-    void testOddOneOut() {
+    void testOddOneOutDefault() {
         assertEquals("OddOneOut", numWordPrinter.printWord(3, "DEFAULT"));
+      
+    }
+
+    @Test
+    void testOddOneOutUpper() {
         assertEquals("ODDONEOUT", numWordPrinter.printWord(3, "UPPERCASE"));
     }
+
 
 
 
