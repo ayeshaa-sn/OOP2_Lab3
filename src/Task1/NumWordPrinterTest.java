@@ -41,6 +41,23 @@ class NumWordPrinterTest {
 
     }
 
+    @Test
+    void testLuckyThirteenUpper() {
+        assertEquals("LUCKYTHIRTEEN", numWordPrinter.printWord(13, "UPPERCASE"));
+    }
+
+
+    @Test
+    void testLuckyThirteenDefault() {
+        assertEquals("LuckyThirteen", numWordPrinter.printWord(13, "default"));
+    }
+
+    @Test
+    void testOddOneOut() {
+        assertEquals("OddOneOut", numWordPrinter.printWord(3, "DEFAULT"));
+        assertEquals("ODDONEOUT", numWordPrinter.printWord(3, "UPPERCASE"));
+    }
+
 
 
 
